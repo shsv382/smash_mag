@@ -4,6 +4,17 @@
 	box-sizing: border-box;
 }
 
+html {
+	background-color: #eee;
+}
+
+body {
+	width: 99%;
+	float: right;
+	background-color: white;
+	padding-bottom: 50px;
+}
+
 header {
 	width: 100%;
 	height: 100px;
@@ -45,6 +56,7 @@ nav > ul > li {
 form {
 	width: 100%;
 	padding: 20px 80px;
+	margin-bottom: 50px;
 }
 
 label {
@@ -55,22 +67,24 @@ label {
 	color: #999;
 }
 
-input#text, input#submit {
+input#text, button#submit {
 	padding: 10px;
 	height: 50px;
 }
 
 input#text {
-	width: 74.5%;
+	width: 78.5%;
 	margin-right: 0;
 	border-top-left-radius: 15px;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
+	border: 1px solid #ddd;
 }
 
-input#submit {
-	width: 24.5%;
+button#submit {
+	color: white;
+	width: 20.5%;
 	margin-left: 0;
 	position: relative;
 	left: -7px;
@@ -80,5 +94,95 @@ input#submit {
 	border-bottom-right-radius: 15px;
 	border-top-right-radius: 15px;
 	background-color: #f51;
-	/*background-color: linear-gradient(#a83, #ac4);*/
+	background-image: -webkit-linear-gradient(to bottom, #e85c33, #e53a2b);
+	background-image: -moz-linear-gradient(to bottom, #e85c33, #e53a2b);
+	background-image: linear-gradient(to bottom, #e85c33, #e53a2b);	
+}
+
+aside {
+	float: left;
+	width: 20%;
+}
+
+div.linker {
+	min-height: 180px;
+	padding-bottom: 30px;
+}
+
+.linker > h3, .linker > ul > li {
+	padding: 10px 20px;
+}
+
+.linker > ul > li {
+	color: #999;
+}
+
+h3 {
+	color: #333;
+	text-transform: uppercase;
+	font-size: .9em;
+	font-family: sans-serif;
+	letter-spacing: 0.175em;
+	font-weight: 700;
+}
+
+.linker > h3:hover, .linker > ul > li:hover {
+	background-color: #ff7;
+	cursor: pointer;
+}
+
+#linker1 {
+	border-left: 5px solid #7cd;
+}
+
+#linker2 {
+	border-left: 5px solid #7d7;
+}
+
+#linker3 {
+	border-left: 5px solid #dd7;
+}
+
+#linker4 {
+	border-left: 5px solid #b7d;
+}
+
+#linker5 {
+	border-left: 5px solid #d9d;
+}
+
+#linker6 {
+	border-left: 5px solid #7dd;
+}
+
+div.article {
+	border-bottom: 5px solid #7af;
+}
+
+article {
+	float: right;
+	width: 70%;
+}
+
+h1, h2 {
+	font-family: "Skolar Bold","Segoe UI Bold","Roboto Slab","Droid Serif",AvenirNext-Bold,"Avenir Bold",Georgia,"Times New Roman",Times,serif;
+}
+
+.article > h1 {
+	font-size: 1.75em;
+	font-weight: 700;
+	color: #444;
+	width: 80%;
+	line-height: 1.25em;
+}
+
+.article > h2 {
+	font-size: 1.25em;
+	font-weight: 600;
+	color: #777;
+	width: 95%;
+	padding: 10px 0 17px 0;
+	line-height: 1.25em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 50px;
 }
