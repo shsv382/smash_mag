@@ -162,6 +162,7 @@ div.article {
 article {
 	float: right;
 	width: 70%;
+	margin-bottom: 50px;
 }
 
 h1, h2 {
@@ -185,4 +186,35 @@ h1, h2 {
 	line-height: 1.25em;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 50px;
+}
+
+p {
+	margin: 20px 0;
+	line-height: 1.5em;
+	color: #333;
+	padding-right: 30px;
+}
+
+p#description {
+	font-size: 1.125em;
+}
+
+p#text {
+	font-size: .875em;
+	font-family: sans-serif;
+}
+
+button.more {
+	display: inline-block;
+	margin: 20px 0 50px 0;
+	background-color: #33aadd;
+	padding: 10px;
+	color: white;
+	border: 1px solid #33aadd;
+	border-radius: 5px;
+}
+
+button.more:hover {
+	border: 1px solid blue;
+	cursor: pointer;
 }
